@@ -45,7 +45,7 @@ public class SplashActivity extends AppCompatActivity {
         if (mail != "") {
             return true;
         }
-     //   return false;
+        return false;
 
     }
 
