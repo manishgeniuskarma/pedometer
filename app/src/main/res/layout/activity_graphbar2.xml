@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.GraphActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/graph_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_sign" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/graph" />
+
+
+    <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+        android:id="@+id/group_choices"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:tbgCheckedButton="@+id/choice_a">
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_a"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="Day"/>
+
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_b"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:text="Week"/>
+        <com.nex3z.togglebuttongroup.button.CircularToggle
+            android:id="@+id/choice_c"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:layout_height="wrap_content"
+            android:text="Month"/>
+
+    </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
